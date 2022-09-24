@@ -27,7 +27,7 @@ public class Main {
         }
         else{
             for(int i = 0; i < letters.length; i++) {
-                System.out.print(letters[i] + "[" + i + "]" + "   ");
+                System.out.print(letters[i] + "[" + i + "]" + " ");
             }
             System.out.println("\n\nElement found.\nIndex: " + result + "\nLetter: " + x);
         }
