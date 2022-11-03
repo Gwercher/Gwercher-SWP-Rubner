@@ -19,7 +19,7 @@ public class Main {
         char letters[] = {'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p'
                 , 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'};
         int n = letters.length;
-        char x = 'ö';
+        char x = 'b';
         int result = binaryLetterSearch(letters, x, 0, n - 1);
 
         if(result == -1){
