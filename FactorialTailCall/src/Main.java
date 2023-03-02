@@ -6,7 +6,6 @@ public class Main {
         // 5! = 5 * 4 * 3 * 2 * 1 = 120
 
         System.out.print(" = " + Recursion(n));
-
     }
 
     public static int Recursion(int n){
@@ -28,13 +27,6 @@ public class Main {
             System.out.println(m + " x " + n);
             return TailCall(m * n, n - 1);
         }
-
     }
-
-
-
-
-
-
 
 }

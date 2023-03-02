@@ -5,19 +5,18 @@ public class Main {
 
     public static void main(String[] args) {
 
-        int n = 3;
+        int n = 5;
 
         System.out.println("Recursion: ");
         System.out.print(" " + sumRecursionCalcMethod(n));
 
-        System.out.println("\n\nIterative: ");
+        System.out.println("\nIterative: ");
         System.out.println(sumIterativeCalcMethod(n));
 
 
-/*
-        System.out.println("Recursion: " + sumRecursionSimple(n));
+        System.out.println("\nRecursion: " + sumRecursionSimple(n));
         System.out.println("Iterative: " + sumIterativeSimple(n));
-*/
+
     }
 
     // with calculation method
