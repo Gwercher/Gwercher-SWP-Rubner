@@ -1,0 +1,6 @@
+Singleton Übung.
+
+Erzeuge eine Klasse Drucker.
+Die Klasse hat eine Methode drucken() -> gibt einen string aus "ich drucke, bin die Instanz XYZ"
+Die Klasse soll nur einmal intitialisert werden können.
+Probieren Sie das Verhalten in einer Main aus.
