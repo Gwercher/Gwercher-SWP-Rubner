@@ -5,7 +5,7 @@ public class Main {
     public static void main(String[] args) {
 
         // cannot use private constructor
-        // Printer p = new Printer("printer p");
+        //Printer p = new Printer("printer p");
 
         // instead use:
         Printer john = Printer.getInstance("john");
@@ -24,13 +24,12 @@ public class Main {
         System.out.println("instance john: " + john.print());
         System.out.println("instance peter" + peter.print());
 
-        john.changeName("test");
+        peter.changeName("test");
         System.out.println("\nchangeName() peter to 'test'");
         System.out.println("instance john: " + john.print());
         System.out.println("instance peter" + peter.print());
 
-
-
+        System.out.println(john);
 
     }
 

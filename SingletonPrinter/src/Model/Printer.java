@@ -1,6 +1,6 @@
 package Model;
 
-public class Printer {
+public class Printer extends Object {
 
     private static Printer _printer = null;
     private String _name;
@@ -17,16 +17,17 @@ public class Printer {
         return _printer;
     }
 
-    public  void changeName(String newName){
+    public void changeName(String newName){
         _name = newName;
     }
 
     public String print(){
         return "I'm a printer. My name is " + _name;
     }
-
+/*
     @Override
     public String toString(){
         return _name;
-    }
+    }*/
+
 }
