@@ -1,5 +1,5 @@
 package Models;
 
-public enum EnvelopeEnum {
+public enum EnvEnum {
     A4, A5, A6
 }
