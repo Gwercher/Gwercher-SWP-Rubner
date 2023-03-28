@@ -15,16 +15,6 @@ public class EnvelopeA4 extends Envelope{
         return _WIDTH;
     }
 
-    @Override
-    public double getWeight() {
-        return super.getWeight();
-    }
-
-    @Override
-    public void setWeight(double weight) {
-        super.setWeight(weight);
-    }
-
     public EnvelopeA4(){
         this(0.0);
     }
@@ -37,7 +27,5 @@ public class EnvelopeA4 extends Envelope{
     public String toString(){
         return "A4: " + super.toString() + ", " + _HEIGHT + " x " + _WIDTH + " [mm]";
     }
-
-
 
 }
