@@ -9,8 +9,8 @@ public class Main {
         Pizza normalPizza = store.cook(PizzaVariation.Calzone);
         Pizza overloadPizza = store.cook(PizzaVariation.Calzone, StoreLocation.Rostock);
 
-        System.out.println("overloaded method: " + overloadPizza.toString());
         System.out.println("normal method: " + normalPizza.toString());
+        System.out.println("overloaded method: " + overloadPizza.toString());
 
     }
 
