@@ -2,14 +2,10 @@ package Models;
 
 public abstract class Store {
 
-    public StoreLocation _loc;
+    protected StoreLocation _loc;
 
     public StoreLocation getStoreLocation(){
         return this._loc;
-    }
-
-    public void setStoreLocation(StoreLocation s){
-        this._loc = s;
     }
 
     public Store(StoreLocation l){

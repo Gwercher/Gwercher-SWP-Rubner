@@ -2,8 +2,8 @@ package Models;
 
 public abstract class Pizza {
 
-    public PizzaLocalVariation _type;
-    public StoreLocation _storeWhereCooked;
+    protected PizzaLocalVariation _type;
+    protected StoreLocation _storeWhereCooked;
 
     public PizzaLocalVariation getPizza(){
         return this._type;
