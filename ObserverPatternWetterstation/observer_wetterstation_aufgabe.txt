@@ -1,0 +1,9 @@
+Modellieren Sie eine Wetterstation mittels Observer Pattern.
+
+Eine Zentrale misst Temperatur und Luftfeuchtigkeit.
+Diverse Anzeigen geben die Messwerte mittels Bilschirm oder Farbsignalen aus.
+Überlegen Sie wie man PUSH und PULL Variante implementiert werden würde. (Also zwei Lösungen)
+
+Programiere in Java, mache zustätzlich nicht optional ein UML Diagramm dazu!
+
+bis nächste Woche (bis 04.MAI).
