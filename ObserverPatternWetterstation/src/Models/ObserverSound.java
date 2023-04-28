@@ -4,22 +4,37 @@ import javax.sound.sampled.*;
 import java.io.File;
 import java.io.IOException;
 
-public class OutputSound implements IOutput {
+public class ObserverSound implements IObserver {
+
+    private final Sensor _subject;
+
+    public ObserverSound(Sensor sensor){
+        this._subject = sensor;
+        this._subject.addObserver(this);
+    }
 
     @Override
-    public void push(Sensor data) {
-
-        if(data.getHumidity() >= 75){
-            System.out.print("BEEEP\n");
-
+    public void pull() {
+        if(_subject.getHumidity() >= 75){
+            System.out.print("BEEP\n");
             sound();
-
         }
         else{
             System.out.print("....\n");
         }
-
     }
+
+    @Override
+    public void push(Sensor sensor) {
+        if(sensor.getHumidity() >= 75){
+            System.out.print("BEEEP\n");
+            sound();
+        }
+        else{
+            System.out.print("....\n");
+        }
+    }
+
 
     public void sound(){
         File file = new File(".\\beep.wav");
@@ -42,18 +57,5 @@ public class OutputSound implements IOutput {
         }
         clip.start();
     }
-
-    private Sensor _data;
-
-    public Sensor getSensor(){
-        return this._data;
-    }
-
-    @Override
-    public void pull(Sensor data) {
-        this._data = data;
-        System.out.println("updated Sound");
-    }
-
 
 }
