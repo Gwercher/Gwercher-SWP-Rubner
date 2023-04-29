@@ -14,7 +14,13 @@ public class ObserverSound implements IObserver {
     }
 
     @Override
-    public void pull() {
+    public void updatePull() {
+        //System.out.print("Sound updated\n");
+        System.out.println("update sound");
+    }
+
+    @Override
+    public void pull(){
         if(_subject.getHumidity() >= 75){
             System.out.print("BEEP\n");
             sound();
@@ -27,7 +33,7 @@ public class ObserverSound implements IObserver {
     @Override
     public void push(Sensor sensor) {
         if(sensor.getHumidity() >= 75){
-            System.out.print("BEEEP\n");
+            System.out.print("BEEP\n");
             sound();
         }
         else{

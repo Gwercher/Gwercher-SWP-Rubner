@@ -10,7 +10,13 @@ public class ObserverDisplay implements IObserver {
     }
 
     @Override
-    public void pull() {
+    public void updatePull() {
+        //System.out.print("Display updated\t\t");
+        System.out.println("update display");
+    }
+
+    @Override
+    public void pull(){
         System.out.printf("temp=%.2f, humidity=%.2f\t\t", this._subject.getTemperature(), this._subject.getHumidity());
     }
 

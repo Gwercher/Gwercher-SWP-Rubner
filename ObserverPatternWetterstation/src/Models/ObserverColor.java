@@ -15,7 +15,13 @@ public class ObserverColor implements IObserver {
     }
 
     @Override
-    public void pull() {
+    public void updatePull() {
+        //System.out.print("Color updated\t\t");
+        System.out.println("update color");
+    }
+
+    @Override
+    public void pull(){
         if(_subject.getTemperature() <= 10){
             System.out.print(ANSI_BLUE + "BLUE\t\t" + ANSI_RESET);
         }
@@ -25,7 +31,6 @@ public class ObserverColor implements IObserver {
         else{
             System.out.print(ANSI_GREEN + "GREEN\t\t" + ANSI_RESET);
         }
-
     }
 
     @Override

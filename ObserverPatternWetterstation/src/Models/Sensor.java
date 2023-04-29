@@ -49,6 +49,13 @@ public class Sensor implements ISubject {
     @Override
     public void notifyObserverPull() {
         for(IObserver ob : this.observers){
+            ob.updatePull();
+        }
+    }
+
+    @Override
+    public void pullAllObservers(){
+        for(IObserver ob : this.observers){
             ob.pull();
         }
     }

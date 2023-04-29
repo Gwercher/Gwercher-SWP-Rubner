@@ -12,9 +12,19 @@ public class Main {
         ObserverColor color = new ObserverColor(sensor);
         ObserverSound sound = new ObserverSound(sensor);
 
+        int c = 1;
+
         for(;;){
-            sensor.measurePull();
-            //sensor.measurePush();
+            // push variant
+            sensor.measurePush();
+
+            // pull variant
+            /*sensor.measurePull();
+            if(c % 3 == 0){
+                sensor.pullAllObservers();
+                c = 1;
+            }
+            c++;*/
 
             try {
                 TimeUnit.SECONDS.sleep(5);
