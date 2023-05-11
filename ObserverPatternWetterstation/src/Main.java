@@ -1,8 +1,4 @@
-import Models.OutputColor;
-import Models.OutputDisplay;
-import Models.OutputSound;
-import Models.Sensor;
-import kotlin.reflect.jvm.internal.impl.protobuf.ByteString;
+import Models.*;
 
 import java.util.concurrent.TimeUnit;
 
@@ -11,19 +7,24 @@ public class Main {
     public static void main(String[] args) {
 
         Sensor sensor = new Sensor();
-        OutputDisplay display = new OutputDisplay();
-        OutputColor color = new OutputColor();
-        OutputSound sound = new OutputSound();
 
+        ObserverDisplay display = new ObserverDisplay(sensor);
+        ObserverColor color = new ObserverColor(sensor);
+        ObserverSound sound = new ObserverSound(sensor);
+
+        int c = 1;
 
         for(;;){
-            sensor.measure();
+            // push variant
+            sensor.measurePush();
 
-            //System.out.printf("temp=%.2f, humidity=%.2f\n", sensor.getTemperature(), sensor.getHumidity());
-
-            display.push(sensor);
-            color.push(sensor);
-            sound.push(sensor);
+            // pull variant
+            /*sensor.measurePull();
+            if(c % 3 == 0){
+                sensor.pullAllObservers();
+                c = 1;
+            }
+            c++;*/
 
             try {
                 TimeUnit.SECONDS.sleep(5);
@@ -31,10 +32,5 @@ public class Main {
                 e.printStackTrace();
             }
         }
-
-
-
     }
-
-
 }
