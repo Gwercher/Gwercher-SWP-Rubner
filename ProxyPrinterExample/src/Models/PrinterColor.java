@@ -2,11 +2,14 @@ package Models;
 
 public class PrinterColor implements IPrinter {
 
-    public static int maxPage = 500;
+    @Override
+    public void print(int pageCount) {
+        System.out.printf("Printing %d page(s) in color...", pageCount);
+    }
 
     @Override
-    public void print(PrinterOptions option) {
-        System.out.println("Printing in color...");
+    public void print(int pageCount, PrinterOptions options){
+        print(pageCount);
     }
 
 }

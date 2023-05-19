@@ -2,11 +2,14 @@ package Models;
 
 public class PrinterBlackWhite implements IPrinter {
 
-    public static int maxPage = 500;
+    @Override
+    public void print(int pageCount) {
+        System.out.printf("Printing %d page(s) in Black and White...", pageCount);
+    }
 
     @Override
-    public void print(PrinterOptions option) {
-        System.out.println("Printing in Black and White...");
+    public void print(int pageCount, PrinterOptions options){
+        print(pageCount);
     }
 
 }
