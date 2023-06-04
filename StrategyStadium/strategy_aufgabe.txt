@@ -1,0 +1,8 @@
+Löse mittels Strategy pattern:
+
+- ein Stadion möchte Tickets verkaufen
+- es gibt mindestens Kinder, Erwachsene und Senioren tickets
+- Ticketpreis besteht aus grundpreis + steuersatz
+- jede ticketklasse hat seinen eigenen grundpreis und steuersatz
+- der steuersatz soll während der laufzeit angepasst werden können.
+- neuer Typus zB studententicket soll leicht hinzufügbar sein.
