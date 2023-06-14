@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/BinarySeachLetter/BinarySeachLetter.iml" filepath="$PROJECT_DIR$/BinarySeachLetter/BinarySeachLetter.iml" />
+      <module fileurl="file://$PROJECT_DIR$/FactorialTailCall/FactorialTailCall.iml" filepath="$PROJECT_DIR$/FactorialTailCall/FactorialTailCall.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Patterns/FactoryPatternEnvelope/FactoryPatternEnvelope.iml" filepath="$PROJECT_DIR$/Patterns/FactoryPatternEnvelope/FactoryPatternEnvelope.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/Gwercher-SWP-Rubner.iml" filepath="$PROJECT_DIR$/.idea/Gwercher-SWP-Rubner.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Patterns/ObserverPatternWetterstation/ObserverPatternWetterstation.iml" filepath="$PROJECT_DIR$/Patterns/ObserverPatternWetterstation/ObserverPatternWetterstation.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Patterns/PizzaFactoryPattern/PizzaFactoryPattern.iml" filepath="$PROJECT_DIR$/Patterns/PizzaFactoryPattern/PizzaFactoryPattern.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Patterns/ProxyPrinterExample/ProxyPrinterExample.iml" filepath="$PROJECT_DIR$/Patterns/ProxyPrinterExample/ProxyPrinterExample.iml" />
+      <module fileurl="file://$PROJECT_DIR$/RecursionSum/RecursionSum.iml" filepath="$PROJECT_DIR$/RecursionSum/RecursionSum.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Patterns/SingletonPrinter/SingletonPrinter.iml" filepath="$PROJECT_DIR$/Patterns/SingletonPrinter/SingletonPrinter.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Patterns/StrategyStadium/StrategyStadium.iml" filepath="$PROJECT_DIR$/Patterns/StrategyStadium/StrategyStadium.iml" />
+    </modules>
+  </component>
+</project>
